@@ -1,6 +1,22 @@
 @extends('layout.navbar')
 
 @section('isi')
+
+{{-- <div class="container mt-2"> --}}
+{{-- <h3> Status Booking </h3>
+<ul class="nav nav-tabs">
+    <li class="nav-item col-lg-6 text-center" ><a class="nav-link active" data-bs-toggle="tab" href="#pembayararn"> Pembayaran</a></li>
+    <li class="nav-item col-lg-6 text-center"><a class="nav-link active"  data-bs-toggle="tab" href="#konfirmasi"> Menunggu Konfirmasi</a></li>
+    <li class="nav-item col-lg-6 text-center" ><a class="nav-link active" data-bs-toggle="tab" href="#transaksi"> Transaksi Berlangsung</a></li>
+    <li class="nav-item col-lg-6 text-center" ><a class="nav-link active" data-bs-toggle="tab" href="#selesai"> Selesai</a></li>
+</ul>
+
+<div class = "tab-content">
+    <div class="tab-pane active " id="pembayaran">
+        <div class="row">
+            <div class="col"> </div>
+            <div class="col-auto"> </div> --}}
+
 <h3 class="text-uppercase mt-2">Pembayaran</h3>
 <table class="table table-striped"> 
     <tr style="border-bottom: 3px solid black; text-align: left;">
@@ -46,6 +62,15 @@
     @endforeach
 </table>
 
+        </div>
+    </div>
+</div>
+
+<div class = "tab-content">
+    <div class="tab-pane active " id="konfirmasi">
+        <div class="row">
+            <div class="col"> </div>
+            <div class="col-auto"> </div>
 
 <h3 class="text-uppercase mt-2"> Menunggu Konfirmasi</h3>
 <table class="table table-striped"> 
@@ -70,6 +95,10 @@
 
 
 </table>
+
+</div>
+</div>
+</div>
 
 <h3 class="text-uppercase mt-2"> Transaksi Berlangsung</h3>
 <table class="table table-striped"> 
@@ -189,7 +218,6 @@
     @php $count += 1
     @endphp
     @endforeach
-
 
 </table>
 

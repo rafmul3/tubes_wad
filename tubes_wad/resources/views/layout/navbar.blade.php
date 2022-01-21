@@ -78,9 +78,15 @@
       {{ auth()->user()->nama }}
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      @can('vendor')
       <li><a class="dropdown-item" href="/profile/">Kelola toko</a></li>
+      @endcan
+      @can('admin')
       <li><a class="dropdown-item" href="/admin">Administrative</a></li>{{-- vendor --}}
+      @endcan
+      @can('customer')
       <li><a class="dropdown-item" href="/status">Status order</a></li>{{-- guest --}}
+      @endcan
       <li><hr class="dropdown-divider"></li>
       <li>
         <form action="/logout" method="POST">

@@ -7,7 +7,7 @@ $cek = false;
 @endphp
 
 
-<h3 class="text-uppercase mt-2"> List Package</h3>
+<h3 class="text-lowecase mt-2" style="font-size:2px; color:white;"> List Package</h3>
 <a class="btn btn-primary btn-lg mt-3" href="/admin/package">Create Package</a>
 <table class="table table-striped"> 
     <tr style="border-bottom: 3px solid black; text-align: left;">

@@ -36,6 +36,7 @@ class MenuController extends Controller
     public function create()
     {
         return view('vendor.menu_create' , [
+            "head" => "",
             "vendor" => auth()->user()
         ]);
     }
